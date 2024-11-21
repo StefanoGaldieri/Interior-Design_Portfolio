@@ -1,12 +1,246 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
+
 <body>
-    <h1>Portfolio</h1>
-    
+    <!-- Navbar --->
+    <section class="sg-top">
+        <div class="sg-nav sg-padding sg-white">
+            <a class="sg-nav-logo sg-padding" href="#home">
+                <b>Interior&Design</b>
+                Interiors
+            </a>
+            <div class="sg-nav-items">
+                <a href="#projects" class="sg-nav-item sg-padding">Projects</a>
+                <a href="#about" class="sg-nav-item sg-padding">About us</a>
+                <a href="#contact" class="sg-nav-item sg-padding">Contact us</a>
+            </div>
+        </div>
+    </section>
+    <header class="sg-hero" id="home">
+        <div class="sg-center">
+            <h1 class="sg-page-title sg-text-black">
+                <span class="sg-padding sg-black sg-opacity-min">
+                    <strong>Interior&Design</strong>
+                </span>
+                <span class="sg-portfolio-font">Portfolio</span>
+            </h1>
+        </div>
+    </header>
+    <main class="sg-content sg-padding">
+        <!-- Sezione Progetti-->
+        <section class="sg-container-wide" id="projects">
+            <div class="sg-padding" >
+                <h2 class="sg-padding-16">Projects</h2>
+            </div>
+            <div class="sg-grid sg-project">
+                <article>
+                    <div class="sg-display-container">
+                        <p class="sg-display-topleft sg-black sg-opacity-min sg-padding"> Do It Yourself</p>
+                        <img class="sg-portfolio-img" src="images/diy-1.jpg" alt="diy Project">
+                    </div>
+                </article>
+                <article>
+                    <div class="sg-grid">
+                        <div class="sg-display-container">
+                            <p class="sg-display-topleft sg-black sg-opacity-min sg-padding"> Living room</p>
+                            <img class="sg-portfolio-img" src="images/living-1.jpg" alt="diy Project">
+                        </div>
+                </article>
+                <article>
+                    <div class="sg-grid">
+                        <div class="sg-display-container">
+                            <p class="sg-display-topleft sg-black sg-opacity-min sg-padding"> Kitchen</p>
+                            <img class="sg-portfolio-img" src="images/kitchen-1.jpg" alt="diy Project">
+                        </div>
+                </article>
+                <article>
+                    <div class="sg-display-container">
+                        <p class="sg-display-topleft sg-black sg-opacity-min sg-padding"> Do It Yourself</p>
+                        <img class="sg-portfolio-img" src="images/diy-2.jpg" alt="diy Project">
+                    </div>
+                </article>
+                <article>
+                    <div class="sg-grid">
+                        <div class="sg-display-container">
+                            <p class="sg-display-topleft sg-black sg-opacity-min sg-padding"> Living room</p>
+                            <img class="sg-portfolio-img" src="images/living-2.jpg" alt="diy Project">
+                        </div>
+                </article>
+                <article>
+                    <div class="sg-grid">
+                        <div class="sg-display-container">
+                            <p class="sg-display-topleft sg-black sg-opacity-min sg-padding"> Kitchen</p>
+                            <img class="sg-portfolio-img" src="images/kitchen-2.jpg" alt="diy Project">
+                        </div>
+                </article>
+            </div>
+        </section>
+        <!-- Sezione About-->
+        <section class="sg-container sg-padding-32" id="about">
+            <h2 class="sg-padding-16">About us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim earum, nulla suscipit, quod vitae
+                laboriosam officiis adipisci amet soluta corrupti nisi possimus repellat non minus doloremque. Nisi
+                eveniet blanditiis odit!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse odio placeat enim veritatis, magnam velit
+                vitae blanditiis optio ex molestiae necessitatibus temporibus possimus. Animi, libero voluptatibus!
+                Earum reprehenderit perferendis libero.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sit aliquid neque fuga ipsum provident
+                culpa iusto. Quae ad labore itaque doloribus necessitatibus commodi, iure nulla expedita, eligendi
+                dolores accusamus?
+            </p>
+        </section>
+        <!-- Sezione contatti-->
+        <section class="sg-container sg-padding-32" id="contact">
+            <h2> Contact Us</h2>
+            <p>Contattaci</p>
+            <form action="/action-page.php" method="post" target="_blank">
+                <input class="sg-input" type="text" placeholder="Nome" name="Name" required>
+                <input class="sg-input" type="text" placeholder="Cognome" name="Cognome" required>
+                <input class="sg-input" type="email" placeholder="E-mail" name="E-mail" required>
+                <input class="sg-input" type="text" placeholder="Oggetto del messaggio" name="Oggetto" required>
+                <input class="sg-input" type="text" placeholder="Messaggio" name="Messaggio" required>
+                <input class="sg-button sg-blacks" type="reset">
+                <button class="sg-button sg-black" type="submit">
+                    Invia messaggio
+                </button>
+            </form>
+        </section>
+        <!-- Sezione testimonial -->
+        <section class="sg-testimonial-grid sg-container-wide sg-padding-32">
+            <article class="sg-testimonial bg-primary">
+                <div class="flex">
+                    <div>
+                        <img src="images/testimonial-1.jpg" alt="testimonial-1">
+                    </div>
+                    <div>
+                        <h2 class="name">Ajeje Brazorf</h2>
+                        <p class="position">Interior Designer</p>
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae soluta dolorum et vitae ratione
+                        rerum nesciunt, obcaecati facere ipsum quisquam nobis libero, fugiat, tempore deleniti quaerat
+                        accusamus debitis nemo architecto.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci incidunt culpa
+                        voluptates. Quis quas magni praesentium rerum aspernatur atque consectetur delectus cumque
+                        deserunt voluptatem officiis, tempora ab eos! Officiis.
+                    </p>
+                </div>
+            </article>
+            <article class="sg-testimonial bg-second">
+                <div class="flex">
+                    <div>
+                        <img src="images/testimonial-2.jpg" alt="testimonial-2">
+                    </div>
+                    <div>
+                        <h2 class="name">Gigi Pallone</h2>
+                        <p class="position">Interior Designer</p>
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae soluta dolorum et vitae ratione
+                        rerum nesciunt, obcaecati facere ipsum quisquam nobis libero, fugiat, tempore deleniti quaerat
+                        accusamus debitis nemo architecto.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci incidunt culpa
+                        voluptates. Quis quas magni praesentium rerum aspernatur atque consectetur delectus cumque
+                        deserunt voluptatem officiis, tempora ab eos! Officiis.
+                    </p>
+                </div>
+            </article>
+            <article class="sg-testimonial bg-neutral">
+                <div class="flex">
+                    <div>
+                        <img src="images/testimonial-3.jpg" alt="testimonial-3">
+                    </div>
+                    <div>
+                        <h2 class="name">Lella Acus</h2>
+                        <p class="position">Interior Designer</p>
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae soluta dolorum et vitae ratione
+                        rerum nesciunt, obcaecati facere ipsum quisquam nobis libero, fugiat, tempore deleniti quaerat
+                        accusamus debitis nemo architecto.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci incidunt culpa
+                        voluptates. Quis quas magni praesentium rerum aspernatur atque consectetur delectus cumque
+                        deserunt voluptatem officiis, tempora ab eos! Officiis.
+                    </p>
+                </div>
+            </article>
+            <article class="sg-testimonial bg-primary">
+                <div class="flex">
+                    <div>
+                        <img src="images/testimonial-4.jpg" alt="testimonial-4">
+                    </div>
+                    <div>
+                        <h2 class="name">Bella Twilight</h2>
+                        <p class="position">Interior Designer</p>
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae soluta dolorum et vitae ratione
+                        rerum nesciunt, obcaecati facere ipsum quisquam nobis libero, fugiat, tempore deleniti quaerat
+                        accusamus debitis nemo architecto.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci incidunt culpa
+                        voluptates. Quis quas magni praesentium rerum aspernatur atque consectetur delectus cumque
+                        deserunt voluptatem officiis, tempora ab eos! Officiis.
+                    </p>
+            </article>
+            <article class="sg-testimonial bg-second">
+                <div class="flex">
+                    <div>
+                        <img src="images/testimonial-5.jpg" alt="testimonial-5">
+                    </div>
+                    <div>
+                        <h2 class="name">Grande Bidone</h2>
+                        <p class="position">Interior Designer</p>
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae soluta dolorum et vitae
+                        ratione
+                        rerum nesciunt, obcaecati facere ipsum quisquam nobis libero, fugiat, tempore deleniti
+                        quaerat
+                        accusamus debitis nemo architecto.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci incidunt culpa
+                        voluptates. Quis quas magni praesentium rerum aspernatur atque consectetur delectus cumque
+                        deserunt voluptatem officiis, tempora ab eos! Officiis.
+                    </p>
+                </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <div class="sg-map sg-padding-top-32">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58516983.82918332!2d19.80741049284327!3d26.468837113583422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1732150829387!5m2!1sit!2sit"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer class="sg-black">
+        <div class="sg-center">
+            <p>Designed by  <a href="https://www.linkedin.com/in/stefano-galdieri/" title="website" target="_blank">Stefano Galdieri</a></p>
+        </div>
+    </footer>
 </body>
+
 </html>

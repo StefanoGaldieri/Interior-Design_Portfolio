@@ -1,0 +1,353 @@
+/* Colorie variabili */
+
+:root {
+    --color-black: #000000;
+    --color-pale-gray: hsla(0, 0%, 95%, 0.295);
+    --color-white: #FFFFFF;
+    --color-grey: hsl(0, 0%, 37%);
+    --color-blue: hsl(241, 81%, 41%);
+    --font-family--primary: "Open Sans";
+
+}
+
+/* Comportamenti standard */
+
+body,
+html {
+    font-family: var(--font-family--primary), Verdana, sans-serif;
+    font-size: 62.5%;
+    line-height: 1.5;
+    margin: auto;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+p {
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--font-family--primary), Arial, sans-serif;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+a {
+    color: inherit;
+}
+
+
+.sg-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.sg-white {
+    background-color: var(--color-white);
+}
+
+/* Navbar */
+
+.sg-top {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.sg-nav {
+    display: flex;
+    /*è la griglia*/
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+    justify-content: space-between;
+}
+
+.sg-nav-logo,
+.sg-nav-items {
+    letter-spacing: 0.5rem;
+}
+
+.sg-nav-logo,
+.sg-nav-items a {
+    text-decoration: none;
+}
+
+.sg-nav-items {
+    text-align: right;
+}
+
+.sg-nav-items a:hover {
+    color: var(--color-blue);
+}
+
+.sg-nav-items {
+    justify-content: end;
+    padding-right: 2em;
+    align-self: center;
+}
+
+/* Sezione hero */
+
+.sg-hero {
+    display: grid;
+    min-height: 50vw;
+    max-height: 70vh;
+    background-image: url(images/hero-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sg-portfolio-font {
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 15px;
+}
+
+
+/* Sezione Progetto */
+
+/* questi due @media danno dimensioni per responsive anche su mobile */
+@media (min-width: 571px) {
+
+
+
+    /* se è sotto 571, sarà 1 colonna, al di sopra 2 colonne */
+    .sg-project {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sg-testimonial-grid {
+        grid-template-areas:
+            "one" "one" "two"
+            "five" "five" "five"
+            "three" "four" "four";
+    }
+
+}
+
+@media (min-width: 821px) {
+
+
+    /* se è sotto 821, sarà 2 colonna, al di sopra 3 colonne */
+    .sg-project {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sg-testimonial-grid {
+        grid-template-areas:
+            "one" "one" "two" "five"
+            "three" "four" "four" "five";
+    }
+
+
+}
+
+
+.sg-portfolio-img {
+    width: 100%;
+}
+
+.sg-display-container {
+    position: relative;
+}
+
+.sg-display-topleft {
+    position: absolute;
+}
+
+/* Sezione contatti */
+
+.sg-input {
+    font-size: 1.4rem;
+    padding: .8rem;
+    display: block;
+    border: none;
+    border-bottom: var(--color-grey);
+    width: 100%;
+}
+
+.sg-button {
+    font-size: 1.6rem;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    margin-top: 1.5rem;
+}
+
+.sg-button:hover {
+    background-color: var(--color-grey);
+    color: var(--color-black);
+}  
+
+/* Footer */
+
+footer{
+    padding: 1.5rem;
+}
+
+footer a:hover{
+    color: yellowgreen;
+}
+
+
+
+/* Utility Class */
+
+.sg-padding {
+    padding: 0.8rem 1.6rem;
+}
+
+.sg-padding-32 {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+
+.sg-padding-top-32 {
+    padding-top: 3.2rem;
+}
+
+.sg-center {
+    text-align: center;
+}
+
+.sg-text-black {
+    color: var(--color-black);
+}
+
+.sg-black {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.sg-opacity-min {
+    opacity: .80;
+}
+
+.sg-container-wide {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sg-container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sg-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sg-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.flex {
+    display: flex;
+    gap: 2em;
+}
+.bg-primary{
+    background-color:lightcyan;
+}
+.bg-neutral{
+    background-color:lightblue;
+}
+.bg-second{
+    background-color: lightskyblue;
+}
+
+/* Sezione testimonial */
+.sg-testimonial img {
+    width: 5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.sg-testimonial .name {
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-weight: 1;
+}
+
+.sg-testimonial .position {
+    font-size: 1.4rem;
+    opacity: 0.5;
+}
+
+.sg-testimonial p:first-of-type {
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+.sg-testimonial p:last-of-type {
+    opacity: 0.7;
+}
+
+.sg-testimonial-grid {
+    display: grid;
+    gap: 2rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
+}
+
+.sg-testimonial-grid .sg-testimonial:nth-child(1) {
+    grid-area: one;
+}
+
+.sg-testimonial-grid .sg-testimonial:nth-child(2) {
+    grid-area: two;
+}
+
+.sg-testimonial-grid .sg-testimonial:nth-child(3) {
+    grid-area: three;
+}
+
+.sg-testimonial-grid .sg-testimonial:nth-child(4) {
+    grid-area: four;
+}
+
+.sg-testimonial-grid .sg-testimonial:nth-child(5) {
+    grid-area: five;
+}
+
+.sg-testimonial {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2.5rem 3rem 3rem var(--color-grey);
+}
+
