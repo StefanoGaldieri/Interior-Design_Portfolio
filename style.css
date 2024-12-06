@@ -22,6 +22,7 @@ html {
 
 body {
     font-size: 1.6rem;
+    
 }
 
 p {
@@ -100,7 +101,7 @@ a {
 }
 
 .sg-nav-items {
-    text-align: right;
+    text-align:right;
 }
 
 .sg-nav-items a:hover {
@@ -135,11 +136,11 @@ a {
 /* Sezione Progetto */
 
 /* questi due @media danno dimensioni per responsive anche su mobile */
-@media (min-width: 571px) {
+@media (min-width: 400px) {
 
 
 
-    /* se è sotto 571, sarà 1 colonna, al di sopra 2 colonne */
+    /* se è sotto 600, sarà 1 colonna, al di sopra 2 colonne */
     .sg-project {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -153,10 +154,10 @@ a {
 
 }
 
-@media (min-width: 821px) {
+@media (min-width: 800px) {
 
 
-    /* se è sotto 821, sarà 2 colonna, al di sopra 3 colonne */
+    /* se è sotto 900, sarà 2 colonna, al di sopra 3 colonne */
     .sg-project {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -303,29 +304,35 @@ footer a:hover {
 }
 
 .sg-testimonial .position {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     opacity: 0.5;
 }
 
 .sg-testimonial p:first-of-type {
-    font-size: 1-4rem;
+    font-size: 1.6rem;
     line-height: 1.2;
 }
 
 .sg-testimonial p:last-of-type {
+    font-size: 1.4rem;
     opacity: 0.7;
 }
 
 .sg-testimonial-grid {
-    display: grid;
-    gap: 1rem;
-    grid-auto-columns: 100%;
+    margin: auto;
+    display:grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    justify-items: center;
+        
     grid-template-areas:
-        "one"
-        "two"
-        "three"
-        "four"
-        "five";
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+   
 }
 
 .sg-testimonial-grid .sg-testimonial:nth-child(1) {
