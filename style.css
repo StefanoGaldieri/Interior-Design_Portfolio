@@ -204,15 +204,15 @@ a {
 .sg-button:hover {
     background-color: var(--color-grey);
     color: var(--color-black);
-}  
+}
 
 /* Footer */
 
-footer{
+footer {
     padding: 1.5rem;
 }
 
-footer a:hover{
+footer a:hover {
     color: yellowgreen;
 }
 
@@ -276,13 +276,16 @@ footer a:hover{
     display: flex;
     gap: 2em;
 }
-.bg-primary{
-    background-color:lightcyan;
+
+.bg-primary {
+    background-color: lightcyan;
 }
-.bg-neutral{
-    background-color:lightblue;
+
+.bg-neutral {
+    background-color: lightblue;
 }
-.bg-second{
+
+.bg-second {
     background-color: lightskyblue;
 }
 
@@ -300,12 +303,12 @@ footer a:hover{
 }
 
 .sg-testimonial .position {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     opacity: 0.5;
 }
 
 .sg-testimonial p:first-of-type {
-    font-size: 1.4rem;
+    font-size: 1-4rem;
     line-height: 1.2;
 }
 
@@ -315,8 +318,8 @@ footer a:hover{
 
 .sg-testimonial-grid {
     display: grid;
-    gap: 2rem;
-    grid-auto-columns: 1fr;
+    gap: 1rem;
+    grid-auto-columns: auto ;
     grid-template-areas:
         "one"
         "two"
@@ -350,4 +353,3 @@ footer a:hover{
     border-radius: 1rem;
     box-shadow: 2.5rem 3rem 3rem var(--color-grey);
 }
-
