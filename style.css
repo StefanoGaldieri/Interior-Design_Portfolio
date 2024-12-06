@@ -291,15 +291,15 @@ footer a:hover {
 
 /* Sezione testimonial */
 .sg-testimonial img {
-    width: 5rem;
-    aspect-ratio: 1;
+    width: 8rem;
+    aspect-ratio: 0.9;
     border-radius: 50%;
 }
 
 .sg-testimonial .name {
     font-size: 1.6rem;
     font-weight: 200;
-    font-weight: 1;
+    font-weight: bolder;
 }
 
 .sg-testimonial .position {
@@ -319,7 +319,7 @@ footer a:hover {
 .sg-testimonial-grid {
     display: grid;
     gap: 1rem;
-    grid-auto-columns: auto ;
+    grid-auto-columns: 100%;
     grid-template-areas:
         "one"
         "two"
@@ -349,7 +349,7 @@ footer a:hover {
 }
 
 .sg-testimonial {
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
     box-shadow: 2.5rem 3rem 3rem var(--color-grey);
 }
